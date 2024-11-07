@@ -1,0 +1,50 @@
+/* Aplicar la fuente Times New Roman */
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+h1{
+    color:#333;
+    font-size: 20px;
+}
+h2{
+    color: #666;
+    font-size: 16px;
+}
+/* Estilo para la imagen */
+img {
+    width: 400px;
+    height: 200px;
+}
+
+/* Estilos para la tabla */
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #666;
+    color: white;
+    font-size: 16px;
+}
+/* Estilo del enlace */
+a {
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.album{
+    background-color: #ccc;
+}
+.Titulo_tabla{
+    font-size: 14px;
+}

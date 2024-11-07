@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web con Contenedores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .contenedor {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            display: none;
+        }
+        .visible {
+            display: block; 
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            document.getElementById("contenedor1").classList.add("visible");
+
+            document.getElementById("botonContenedor1").onclick = function() {
+                
+                document.getElementById("contenedor1").classList.remove("visible");
+                document.getElementById("contenedor2").classList.add("visible");
+            };
+
+            document.getElementById("botonContenedor2").onclick = function() {
+               
+                document.getElementById("contenedor2").classList.remove("visible");
+                document.getElementById("contenedor1").classList.add("visible");
+            };
+        });
+    </script>
+</head>
+<body>
+    <h1>Ejemplo de Contenedores</h1>
+
+    <div id="contenedor1" class="contenedor">
+        <h2>Título del Contenedor 1</h2>
+        <p>Este es el contenido del primer contenedor.</p>
+        <button id="botonContenedor1">Ir al Contenedor 2</button>
+    </div>
+
+    <div id="contenedor2" class="contenedor">
+        <h2>Título del Contenedor 2</h2>
+        <p>Este es el contenido del segundo contenedor.</p>
+        <button id="botonContenedor2">Regresar al Contenedor 1</button>
+    </div>
+</body>
+</html>

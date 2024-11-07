@@ -1,0 +1,21 @@
+body {
+    background-color:blueviolet; 
+    font-family: Arial, sans-serif; 
+    font-size: 30px; 
+}
+
+.titulo {
+    text-align: center;
+    color:black; 
+}
+
+.visor-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton-anterior,
+.boton-siguiente {
+    font-size: 30px; 
+    margin-top: 20px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Ejemplo</title>
+    <link rel="stylesheet" href="Ejercicio1.css">
+</head>
+<body>
+    <h1 id="titulo">Este es el Título</h1>
+    <p id="parrafo">Este es un párrafo de ejemplo que contiene texto de muestra.</p>
+    
+    <button id="botonRojo">Poner Título en Rojo</button>
+    <button id="botonNegrita">Poner Párrafo en Negrita</button>
+
+    <script>
+        document.getElementById("botonRojo").onclick = function() {
+            document.getElementById("titulo").style.color = "red";
+        };
+
+        document.getElementById("botonNegrita").onclick = function() {
+            document.getElementById("parrafo").style.fontWeight = "bold";
+        };
+    </script>
+</body>
+</html>

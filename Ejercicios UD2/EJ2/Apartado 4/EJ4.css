@@ -1,0 +1,46 @@
+/* titulo principal */
+h1 {
+    color: red;
+    text-align: center;
+}
+
+/* titulo trabajador 1 */
+.trabajador:nth-child(2) h2 {
+    color:blue;
+}
+
+/* seccion trabajador */
+.trabajador {
+    border: 2px solid black;
+    margin: 20px 0;
+    padding: 10px;
+    background-color:darkgray;
+}
+
+/* titulo "Datos personales" y "Estudios" */
+h3 {
+    color: black;
+    margin-bottom: 5px;
+}
+
+/* Subrayado y lista*/
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* titulo trabajador 1 */
+h2 {
+    color:green;
+    text-align: center;
+}
+
+/* cada seccion de la caja */
+.datos-personales, .estudios {
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
