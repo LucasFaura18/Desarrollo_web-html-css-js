@@ -1,5 +1,6 @@
 const button = document.getElementById("boton");
 const button2 = document.getElementById("boton2");
+const button3 = document.getElementById("boton3");
 const h1 = document.querySelector("h1");
 const body = document.querySelector("body");
 
@@ -21,4 +22,13 @@ button.addEventListener("click", function(){
     h1.style.color = "red";
     h1.textContent = "Lucas Faura Martín";
 });*/
+
+button3.addEventListener("click", function(){
+    debugger;
+    if (body.style.backgroundColor === "") {
+        body.style.backgroundColor = "green";
+    }else{
+        body.style.backgroundColor = "";
+    }
+});
 
