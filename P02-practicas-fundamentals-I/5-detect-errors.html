@@ -1,13 +1,21 @@
 <h1 id="title">Click Me</h1>
 <button id="myButton">Click Me</button>
 <script>
-  const button = document.getElementById("myTitle");
+  const button = document.getElementById("myButton");
+  const title = document.getElementById("title");
   button.addEventListener("click", function () {
     button.textContent = "Clicked!";
   });
 
 
   // TODO: Fix the error and add
+
+  // El error esta en que el id del elemento es "myButton" y no "myTitle"
+
   // the functionality to change the titel to "Clicked!"
+
+  button.addEventListener("click", function () {
+    title.textContent = "Clicked!";
+  });
 
 </script>

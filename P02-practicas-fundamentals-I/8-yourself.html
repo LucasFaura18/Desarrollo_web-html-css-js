@@ -29,19 +29,52 @@
 
   <h1>First Javascript contact</h1>
   <p>This is the initial text.</p>
-
-  <button>Hello World</button>
-  <button>Goodbye World</button>
-  <button>Bold</button>
-  <button>Italic</button>
-  <button>Change Color</button>
+  <!--He añadido id a los botones para poder implementarlos mejor-->
+  <button id="HelloButton" >Hello World</button>
+  <button id="GoodbyeButton" >Goodbye World</button>
+  <button id="BoldButton" >Bold</button>
+  <button id="ItalicButton" >Italic</button>
+  <button id="ColorButton" >Change Color</button>
 
   <script>
+      const paragraph = document.querySelector("p");
       // A button that, when clicked, changes the text of the paragraph <p> to "Hello World".
+      const helloButton = document.getElementById("HelloButton");
+      helloButton.addEventListener("click", function () {
+        paragraph.textContent = "Hello World";
+      });
       // A button that, when clicked, changes the text of the paragraph < p > to "Goodbye World".
+      const goodbyeButton = document.getElementById("GoodbyeButton");
+      goodbyeButton.addEventListener("click", function () {
+        paragraph.textContent = "Goodbye World";
+      });
       // A button that, when clicked, change the text style to bold.
+      const boldButton = document.getElementById("BoldButton");
+      boldButton.addEventListener("click", function () {
+        paragraph.style.fontWeight = "bold";
+        paragraph.textContent = "Bold";
+        // Quita el italic style
+        paragraph.style.fontStyle = "normal";
+      });
       // A button that, when clicked, change the text style to italic.
+      const italicButton = document.getElementById("ItalicButton");
+      italicButton.addEventListener("click", function () {
+        paragraph.style.fontStyle = "italic";
+        paragraph.textContent = "Italic";
+        // Quita el bold style
+        paragraph.style.fontWeight = "normal";
+      });
       // A button that, when clicked, change the color of the text to red, when it is clicked again set the color back to the initial color.
+      const colorButton = document.getElementById("ColorButton");
+      colorButton.addEventListener("click", function () {
+        if (paragraph.style.color === "red") {
+          paragraph.style.color = "";
+          paragraph.textContent = "Black";
+        } else {
+          paragraph.style.color = "red";
+          paragraph.textContent = "Red";
+        }
+      });
 
   </script>
 
