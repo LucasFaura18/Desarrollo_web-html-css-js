@@ -10,6 +10,9 @@
   button.addEventListener("click", function () {
     for (let i = 0; i < paragraphs.length; i++) {
       paragraphs[i].textContent = "Changed!";
+      const listItem = document.createElement("li");
+      listItem.textContent = paragraphs[i].textContent;
+      document.body.appendChild(listItem);
     }
   });
 

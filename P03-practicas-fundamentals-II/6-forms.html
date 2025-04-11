@@ -35,6 +35,14 @@
 
   <script>
     //TODO: When the button Registrarse is clicked, it should display all the input value in their respective <p> tag
+      const form = document.getElementById("registroForm");
+      form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const nombre = document.getElementById("nombre").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+      });
     // Add also a validation for the form, if the name is empty, show an error message in the <span> tag with id="errorNombre"
     // If the email is empty, show an error message in the <span> tag with id="errorEmail"
     // If the password is empty, show an error message in the <span> tag with id="errorPassword"
